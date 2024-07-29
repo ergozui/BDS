@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/main.css}" media="all">
+    <title>录入Token</title>
+</head>
+<body>
+<div class="container">
+  <div class="box1">
+    <form action="/myController/uploadExcel" method="post" enctype="multipart/form-data" name="form1" id="form" >
+      <h1>录入Token</h1>
+      <!-- 其他输入框... -->
+      <label>上传文件<input type="file" name="excelFile" class="acc1" /></label>
+      <!-- 其他输入框... -->
+      <input class="submit" type="submit" name="submit" value="提交" />
+    </form>
+  </div>
+</div>
+</body>
+<!-- 其他代码... -->
+</html>

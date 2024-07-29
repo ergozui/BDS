@@ -101,7 +101,5 @@ var password = "";  // 设置为空字符串
 var keyObject = keythereum.importFromFile(address, datadir);
 var privateKey = keythereum.recover(password, keyObject);
 console.log(privateKey.toString('hex'));
-
-
-
 ```
+使用idea调制项目的话直接运行application
